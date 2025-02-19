@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/logistic/static/css/main.49a970a1.css",
+    "main.js": "/logistic/static/js/main.5e43f390.js",
+    "static/js/453.7aa19888.chunk.js": "/logistic/static/js/453.7aa19888.chunk.js",
+    "index.html": "/logistic/index.html",
+    "main.49a970a1.css.map": "/logistic/static/css/main.49a970a1.css.map",
+    "main.5e43f390.js.map": "/logistic/static/js/main.5e43f390.js.map",
+    "453.7aa19888.chunk.js.map": "/logistic/static/js/453.7aa19888.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49a970a1.css",
+    "static/js/main.5e43f390.js"
+  ]
+}
