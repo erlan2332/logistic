@@ -1,0 +1,123 @@
+.sidebar {
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 290px;
+  height: 750px; /* 🔥 Фиксированная высота */
+  background-color: #000;
+  color: #fff;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.sidebar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.logo-box {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.sidebar-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 2px;
+}
+
+/* Меню */
+.sidebar-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.sidebar-menu li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-menu a:hover {
+  color: #cfcfcf;
+}
+
+/* Активный фон (плашка) */
+.sidebar-menu .menu-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 38px;
+  background-color: #000000;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Перемещение фона при выборе */
+.sidebar-menu a.active {
+  font-weight: 500;
+  color: #000000;
+  background-color: #fff;
+}
+
+.sidebar-menu a.active ~ .menu-background {
+  transform: translateY(calc(38px * var(--index)));
+}
+
+/* Админ-кнопка */
+.admin-button {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.admin-button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+}
+
+.admin-button button:hover {
+  background: #e5e5e5;
+}
+
+.admin-icon {
+  margin-right: 8px;
+}

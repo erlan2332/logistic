@@ -1,0 +1,126 @@
+/* Основной контейнер */
+.history-page-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Заголовок */
+.history-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Фильтры */
+.filters-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.filter-input {
+    flex: 1;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    color: #333;
+}
+
+.filter-input:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.sort-button {
+    padding: 0.6rem 1rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.sort-button:hover {
+    background: #333;
+}
+
+/* Контейнер для карточек */
+.trips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Отступ между карточками */
+}
+
+/* Карточка рейса */
+.trip-card {
+    width: 800px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-left:  18px solid #333;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: left;  /* Выровнял весь текст по левому краю */
+    gap: 1rem;
+    padding-left: 2rem; /* Добавил отступ слева для аккуратности */
+}
+
+/* Заголовки свойств */
+.trip-card strong {
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Значения */
+.trip-card div {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Логотип справа */
+.trip-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-self: flex-start;
+}
+
+/* Полоса статуса */
+.trip-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.8rem;
+    border-top: 2px solid #eee;
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+/* Сообщение об отсутствии рейсов */
+.no-trips-message {
+    text-align: center;
+    color: #777;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}

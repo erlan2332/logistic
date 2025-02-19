@@ -1,0 +1,18 @@
+/* src/components/styles/Layout.css */
+
+/* Общая сетка: сайдбар слева, контент справа */
+.layout {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    color: #000;
+    overflow: hidden; /* чтобы не было прокрутки у body, если хотите */
+  }
+  
+  .main-content {
+    flex: 1;
+    overflow-y: auto; /* прокрутка основного контента */
+    background: #fff;
+  }
+  

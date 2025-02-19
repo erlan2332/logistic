@@ -1,0 +1,77 @@
+/* src/components/styles/HomePage.css */
+
+.home-container {
+    padding: 1.5rem;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Чёрная кнопка "Главная ▼" */
+  .home-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-dropdown {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+  
+  .home-dropdown .arrow {
+    margin-left: 0.5rem;
+  }
+  
+  /* Надпись "график kpa" */
+  .chart-title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+    color: #000;
+  }
+  
+  /* Контейнер со столбцами, выстраиваем их в строку */
+  .bars-chart {
+    display: flex;
+    align-items: flex-end; /* нижнее выравнивание */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Каждый столбец */
+  .bar {
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Текст внутри столбца (вертикально) */
+  .bar-text {
+    color: #fff;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    /* Можно adjust размер/позицию по вкусу */
+    position: absolute;
+    bottom: 5px; 
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  
+  /* Текст "рейсов совершено..." */
+  .trips-count {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .trips-count span {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 600;
+  }
+  

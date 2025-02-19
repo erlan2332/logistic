@@ -1,0 +1,121 @@
+/* Основной контейнер */
+.main-page-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* Заголовок */
+.main-titleert {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 2rem;
+}
+
+/* Контейнер для графика */
+.chart-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Заголовок графика */
+.chart-title {
+  font-size: 1.5rem;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+/* Контейнер для карточек */
+.brand-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Карточка с рейсами (черный фон) */
+.brand-card:nth-child(1),
+.brand-card:nth-child(4),
+.brand-card:nth-child(7) {
+  background: #171717; /* Черный */
+  color: #fff;
+}
+
+/* Карточка с рейсами (серый фон) */
+.brand-card:nth-child(2),
+.brand-card:nth-child(5),
+.brand-card:nth-child(8) {
+  background: #555; /* Серый */
+  color: #f0f0f0;
+}
+
+/* Карточка с рейсами (белый фон, черный текст) */
+.brand-card:nth-child(3),
+.brand-card:nth-child(6),
+.brand-card:nth-child(9) {
+  background: #fff; /* Белый */
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+/* Общий стиль для всех карточек */
+.brand-card {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 85%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Название грузовика */
+.brand-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* Количество рейсов */
+.brand-trips {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Контейнер для статистики */
+.summary-container {
+  background: #222; /* Темно-серый */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст статистики */
+.summary-text {
+  font-size: 1.1rem;
+  color: #f9f9f9; /* Белый текст */
+  margin: 0.5rem 0;
+}
+
+/* Выделенные цифры */
+.summary-highlight {
+  font-weight: 600;
+  color: #f9f9f9;
+  margin-left: 0.5rem;
+}
+
+/* График */
+.recharts-bar-rectangles {
+  gap: 10px !important;
+}
+
+.recharts-bar {
+  margin-right: 10px !important;
+}

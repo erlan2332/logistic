@@ -1,0 +1,181 @@
+.trucks-list-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.bgc-title {
+  position: relative;
+  width: 240px;
+  padding-left: 35px;
+  padding-top: 5px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: #020001;
+}
+
+.main-title {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.add-button {
+  position: relative;
+  right: 570px;
+  width: 240px;
+  height: 74px;
+  background-color: #008443;
+  border: none;
+  padding-left: 35px;
+  padding-top: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.add-button:hover {
+  background: #333;
+}
+
+.trucks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+.truck-card {
+  background: #171717;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-decoration: none; /* ✅ Убрано подчеркивание */
+  transition: transform 0.2s;
+}
+
+.truck-card:hover {
+  transform: translateY(-3px);
+}
+
+.truck-number {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Все тексты внутри карточек теперь белые */
+.truck-number,
+.truck-model,
+.calibration-label,
+.calibration-value {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.truck-model {
+  color: #e5e5e5;
+  font-weight: lighter;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.calibration-label,
+.calibration-value {
+  color: #a3a3a3;
+  position: relative;
+  left: 402px;
+  top: -10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ✅ Полностью убираем подчеркивание со всех ссылок */
+.truck-card a {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: white;
+}
+
+.truck-card a:hover {
+  text-decoration: none; /* Убирает подчеркивание при наведении */
+}
+
+/* Убираем возможные границы или линии снизу */
+.truck-number,
+.truck-model,
+.calibration-label,
+.calibration-value {
+  border-bottom: none; /* Убирает линии, если есть */
+}
+
+/* Кнопки действий */
+.truck-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn, .delete-btn {
+  height: 40px;
+  background: #020001;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 15px;
+}
+
+.delete-btn {
+  background: #fff;
+  color: #333;
+}
+
+.edit-btn:hover {
+  background: #ddd;
+  color: #020001;
+}
+
+.delete-btn:hover {
+  background: #020001;
+  color: #fff;
+}
+
+/* Модальное окно */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.modal-title {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.truck-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
