@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api"; // URL бэкенда
+const API_URL = "https://track-esep-latest.onrender.com/api"; // URL бэкенда
 
 // 🚚 Получить список всех грузовиков
 export const fetchTrucks = async () => {

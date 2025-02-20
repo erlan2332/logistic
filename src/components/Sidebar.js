@@ -10,7 +10,8 @@ function Sidebar() {
           <div className="logo-rect" />
           <div className="logo-square" />
         </div>
-        <span className="sidebar-title">express</span>
+        <span className="sidebar-title"></span>
+        <img src="" />
       </div>
 
       <nav className="sidebar-menu">
